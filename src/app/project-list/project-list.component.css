@@ -29,6 +29,9 @@ h1 {
 }
 
 .project-item {
+  border-width: 2px;
+  border-color: grey;
+  border-style: solid;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -36,9 +39,7 @@ h1 {
   height: 200px;
   margin: 10px 5px;
   padding: 5px;
-  border-width: 2px;
-  border-color: grey;
-  border-style: solid;
+  word-wrap: break-word;
 }
 
 .project-item h2 {

@@ -6,14 +6,18 @@ import { ProjectListModule } from './project-list/project-list.module';
 import { AppComponent } from './app.component';
 
 import { routing } from './app.routing';
+import { ReactiveFormsModule } from '@angular/forms';
+import { LoginSignupComponent } from './login-signup.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginSignupComponent
   ],
   imports: [
     BrowserModule,
     ProjectListModule,
+    ReactiveFormsModule,
     routing
   ],
   providers: [],

@@ -1,0 +1,21 @@
+<h1 *ngIf="isSigningUp">Sign Up</h1>
+<h1 *ngIf="!isSigningUp">Login</h1>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+  <label for="username">Username:</label>
+  <input type="text" name="username" id="username" formControlName="username" placeholder="Username" />
+
+  <label *ngIf="isSigningUp" for="email-address">Email Address:</label>
+  <input *ngIf="isSigningUp" type="text" name="email-address" id="email-address" formControlName="emailAddress" placeholder="Email Address" />
+  
+  <label for="password">Password:</label>
+  <input type="password" name="password" id="password" formControlName="password" placeholder="Password" />
+
+  <label *ngIf="isSigningUp" for="repeat-password">Confirm Password:</label>
+  <input *ngIf="isSigningUp" type="password" name="repeat-password" id="repeat-password" formControlName="repeatPassword" placeholder="Confirm Password" />
+  
+  <input type="checkbox" name="remember-me" id="remember-me" formControlName="rememberMe">
+  <label for="remember-me">Remember Me</label>
+  
+  <button type="submit">Search</button>
+</form>
