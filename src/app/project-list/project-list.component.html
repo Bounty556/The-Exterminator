@@ -1,0 +1,24 @@
+<section>
+  <div id="search-form">
+    <form
+      [formGroup]="form"
+      (ngSubmit)="onSubmit(form.value)">
+      <input type="text" name="projectName" id="projectName" formControlName="projectName" />
+      <button type="submit">Search</button>
+    </form>
+  </div>
+  <h1 *ngIf="!hideRecentHeader">Recently Updated Projects</h1>
+  <div id="project-list">
+    <div class="project-item" *ngFor="let project of projects">
+      <h2>{{project.name}}</h2>
+      <div>
+        <p>Last Update: {{project.lastUpdated}}</p>
+        <p>Open Bugs: {{project.openBugs}}</p>
+        <p>Solved Bugs: {{project.solvedBugs}}</p>
+      </div>
+      <div class="view-project">
+        View Project
+      </div>
+    </div>
+  </div>
+</section>
