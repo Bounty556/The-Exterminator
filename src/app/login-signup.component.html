@@ -1,21 +1,41 @@
-<h1 *ngIf="isSigningUp">Sign Up</h1>
-<h1 *ngIf="!isSigningUp">Login</h1>
-
-<form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
-  <label for="username">Username:</label>
-  <input type="text" name="username" id="username" formControlName="username" placeholder="Username" />
-
-  <label *ngIf="isSigningUp" for="email-address">Email Address:</label>
-  <input *ngIf="isSigningUp" type="text" name="email-address" id="email-address" formControlName="emailAddress" placeholder="Email Address" />
-  
-  <label for="password">Password:</label>
-  <input type="password" name="password" id="password" formControlName="password" placeholder="Password" />
-
-  <label *ngIf="isSigningUp" for="repeat-password">Confirm Password:</label>
-  <input *ngIf="isSigningUp" type="password" name="repeat-password" id="repeat-password" formControlName="repeatPassword" placeholder="Confirm Password" />
-  
-  <input type="checkbox" name="remember-me" id="remember-me" formControlName="rememberMe">
-  <label for="remember-me">Remember Me</label>
-  
-  <button type="submit">Search</button>
-</form>
+<div id="login-container">
+  <div id="login-content">
+    <h1 *ngIf="isSigningUp">Sign Up</h1>
+    <h1 *ngIf="!isSigningUp">Login</h1>
+    
+    <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+      <div class="entry-pair">
+        <label for="username">Username:</label><br />
+        <input type="text" name="username" id="username" formControlName="username" placeholder="Username" />
+      </div>
+    
+      <div *ngIf="isSigningUp" class="entry-pair">
+        <label for="email-address">Email Address:</label><br />
+        <input type="text" name="email-address" id="email-address" formControlName="emailAddress" placeholder="Email Address" />
+      </div>
+      
+      <div class="entry-pair">
+        <label for="password">Password:</label><br />
+        <input type="password" name="password" id="password" formControlName="password" placeholder="Password" />
+      </div>
+      
+      <div *ngIf="isSigningUp" class="entry-pair">
+        <label *ngIf="isSigningUp" for="repeat-password">Confirm Password:</label><br />
+        <input *ngIf="isSigningUp" type="password" name="repeat-password" id="repeat-password" formControlName="repeatPassword" placeholder="Confirm Password" />
+      </div>
+    
+      <div id="remember-me-option">
+        <input type="checkbox" name="remember-me" id="remember-me" formControlName="rememberMe">
+        <label for="remember-me">Remember Me</label>
+      </div>
+      
+      <div id="account-message">
+        <p *ngIf="isSigningUp">Already have an account? <a (click)="onChangeMethod()">Login here</a></p>
+        <p *ngIf="!isSigningUp">Don't have an account yet? <a (click)="onChangeMethod()">Sign up here</a></p>
+      </div>
+    
+      <button *ngIf="isSigningUp" type="submit">Sign Up</button>
+      <button *ngIf="!isSigningUp" type="submit">Login</button>
+    </form>
+  </div>
+</div>

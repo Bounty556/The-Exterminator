@@ -25,12 +25,16 @@ time, mark, audio, video {
 	background-color: #FAFAFA;
 	font-family: 'Titillium Web', sans-serif;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 	background-color: #FAFAFA;
 	font-family: 'Titillium Web', sans-serif;
+}
+html, body {
+	height: 90%;
 }
 body {
 	line-height: 1;

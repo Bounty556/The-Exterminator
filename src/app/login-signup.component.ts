@@ -28,4 +28,9 @@ export class LoginSignupComponent implements OnInit {
   onSubmit(accountData) {
     console.log(accountData);
   }
+
+  onChangeMethod() {
+    this.isSigningUp = !this.isSigningUp;
+    this.form.reset();
+  }
 }
