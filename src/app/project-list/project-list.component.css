@@ -12,8 +12,14 @@ button {
   padding: 5px;
 }
 
+h1 {
+  font-size: 36px;
+  margin: 15px;
+}
+
 #project-list {
   text-align: left;
+  margin-top: 25px;
   margin-left: 10%;
   margin-right: 10%;
   display: flex;
@@ -58,14 +64,5 @@ button {
   border-color: green;
   color: green;
   background-color: #EAEAEA;
-}
-
-.project-item .view-project {
-  text-align: center;
-  padding-bottom: 15px;
-  padding-top: 15px;
-  margin-left: -5px;
-  margin-right: -5px;
-  margin-bottom: -5px;
-  border-top: solid grey 1px;
+  cursor: pointer;
 }

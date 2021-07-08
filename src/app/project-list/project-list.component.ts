@@ -9,6 +9,8 @@ interface ProjectListItem {
   projectId: number
 }
 
+// TODO: Add a 50 character limit to names
+
 @Component({
   selector: 'project-list',
   templateUrl: './project-list.component.html',
@@ -151,7 +153,7 @@ export class ProjectListComponent implements OnInit {
     projectId: 15
   },
   {
-    name: 'Soul Game Engine 5',
+    name: 'This Project Has A Really Super Long Name, Like RE',
     lastUpdated: 'March 6th, 2021',
     openBugs: 73,
     solvedBugs: 140,
