@@ -8,6 +8,7 @@ import { FormBuilder, FormGroup } from "@angular/forms";
 })
 export class CreateProjectComponent implements OnInit {
   form: FormGroup;
+  projectManagers: string[] = [];
 
   constructor(private formBuilder: FormBuilder) {}
 
@@ -15,8 +16,15 @@ export class CreateProjectComponent implements OnInit {
     this.form = this.formBuilder.group({
       projectName: this.formBuilder.control(''),
       projectDescription: this.formBuilder.control(''),
-      privacyMode: this.formBuilder.control('Public'),
-      projectManagers: this.formBuilder.control('')
+      privacyMode: this.formBuilder.control('Public')
     });
+  }
+
+  moveManager(event) {
+    event.preventDefault();
+  }
+
+  onSubmit(form) {
+    console.log(form);
   }
 }

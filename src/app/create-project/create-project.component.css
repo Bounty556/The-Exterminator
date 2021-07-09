@@ -1,0 +1,17 @@
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.move-manager-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.managers-form {
+  display: flex;
+  flex-direction: row;
+}

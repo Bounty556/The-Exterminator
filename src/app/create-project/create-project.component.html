@@ -1,0 +1,41 @@
+<form 
+  [formGroup]="form"
+  (ngSubmit)="onSubmit(form.value)">
+  <div class="entry-pair">
+    <label for="projectName">Project Name:</label><br />
+    <input type="text" id="project-name" name="projectName" formControlName="projectName" placeholder="New Project" />
+  </div>
+
+  <div class="entry-pair">
+    <label for="projectDescription">Project Description:</label><br />
+    <input type="text" id="project-description" name="projectDescription" formControlName="projectDescription" placeholder="My First Project..." />
+  </div>
+  
+  <div class="privacy-settings">
+    <p>Privacy:</p>
+    <input type="radio" id="public" name="privacyMode" value="Public" formControlName="privacyMode" />
+    <label for="public" class="unselectable">Public</label><br />
+    <input type="radio" id="private" name="privacyMode" value="Private" formControlName="privacyMode" />
+    <label for="private" class="unselectable">Private</label>
+  </div>
+  
+  <div class="manager-settings">
+    <p>Add Project Managers (You are automatically a manager for this project by default)</p>
+    
+    <label for="user-search">Search:</label><br />
+    <input type="text" id="user-search" name="user-search" /><br />
+    
+    <div class="managers-form">
+      <select name="unadded-users" multiple>
+        <option value="JHalpert2 Jimmy.Halpert@gmail.com">JHalpert2 Jimmy.Halpert@gmail.com</option>
+        <option value="Bob123 BWeckl@gmail.com">Bob123 BWeckl@gmail.com</option>
+      </select>
+      <button (click)="moveManager($event)">&rarr;<br />&larr;</button>
+      <select name="added-users" multiple>
+        <option value="BIdol BillyIdol23@gmail.com">BIdol BillyIdol23@gmail.com</option>
+      </select>
+    </div>
+  </div>
+
+  <button type="submit">Create Project</button>
+</form>
