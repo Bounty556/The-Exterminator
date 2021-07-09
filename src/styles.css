@@ -13,7 +13,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -23,6 +23,14 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 	background-color: #FAFAFA;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+textarea {
+	margin: 0;
+	padding: 0;
+	border: 1;
+	font-size: 100%;
 	font-family: 'Titillium Web', sans-serif;
 }
 

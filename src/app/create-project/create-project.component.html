@@ -8,10 +8,10 @@
 
   <div class="entry-pair">
     <label for="projectDescription">Project Description:</label><br />
-    <input type="text" id="project-description" name="projectDescription" formControlName="projectDescription" placeholder="My First Project..." />
+    <textarea type="text" id="project-description" name="projectDescription" formControlName="projectDescription" placeholder="My First Project..."></textarea>
   </div>
   
-  <div class="privacy-settings">
+  <div id="privacy-settings">
     <p>Privacy:</p>
     <input type="radio" id="public" name="privacyMode" value="Public" formControlName="privacyMode" />
     <label for="public" class="unselectable">Public</label><br />
@@ -19,13 +19,12 @@
     <label for="private" class="unselectable">Private</label>
   </div>
   
-  <div class="manager-settings">
+  <div id="manager-settings">
     <p>Add Project Managers (You are automatically a manager for this project by default)</p>
     
-    <label for="user-search">Search:</label><br />
-    <input type="text" id="user-search" name="user-search" /><br />
+    <input type="text" id="user-search" name="user-search" placeholder="Email or Username"/><br />
     
-    <div class="managers-form">
+    <div id="managers-form">
       <select name="unadded-users" multiple>
         <option value="JHalpert2 Jimmy.Halpert@gmail.com">JHalpert2 Jimmy.Halpert@gmail.com</option>
         <option value="Bob123 BWeckl@gmail.com">Bob123 BWeckl@gmail.com</option>
@@ -37,5 +36,5 @@
     </div>
   </div>
 
-  <button type="submit">Create Project</button>
+  <button type="submit" id="submit-button">Create Project</button>
 </form>
