@@ -2,7 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { FormGroup, FormBuilder } from "@angular/forms";
 
 @Component({
-  selector: 'login-signup',
+  selector: 'ex-login-signup',
   templateUrl: './login-signup.component.html',
   styleUrls: ['./login-signup.component.css']
 })

@@ -12,7 +12,7 @@ interface ProjectListItem {
 // TODO: Add a 30 character limit to names here
 
 @Component({
-  selector: 'project-list',
+  selector: 'ex-project-list',
   templateUrl: './project-list.component.html',
   styleUrls: ['./project-list.component.css']
 })
