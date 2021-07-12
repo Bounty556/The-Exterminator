@@ -1,0 +1,9 @@
+<form>
+  <label for="bugDescription">Bug Description:</label>
+  <input type="text" id="bug-description" name="bugDescription" formControlName="bugDescription" />
+  <label for="bugDetails">Details and Reproduction Procedure:</label>
+  <input type="text" id="bug-details" name="bugDetails" formControlName="bugDetails" />
+
+  <button type="submit">Create Bug</button>
+  <button (click)="returnToProject()">Cancel</button>
+</form>
