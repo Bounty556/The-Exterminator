@@ -1,8 +1,8 @@
-<form>
-  <label for="bugDescription">Bug Description:</label>
-  <input type="text" id="bug-description" name="bugDescription" formControlName="bugDescription" />
-  <label for="bugDetails">Details and Reproduction Procedure:</label>
-  <input type="text" id="bug-details" name="bugDetails" formControlName="bugDetails" />
+<form [formGroup]="form" (ngSubmit)="form.value">
+  <label for="bugDescription">Bug Description:</label> <br />
+  <input type="text" id="bug-description" name="bugDescription" formControlName="bugDescription" /> <br />
+  <label for="bugDetails">Details and Reproduction Procedure:</label> <br />
+  <textarea id="bug-details" name="bugDetails" formControlName="bugDetails"></textarea> <br />
 
   <button type="submit">Create Bug</button>
   <button (click)="returnToProject()">Cancel</button>
