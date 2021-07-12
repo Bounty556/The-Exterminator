@@ -1,0 +1,50 @@
+#project-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+#project-bugs {
+  width: calc(70% - 50px);
+  height: 100%;
+  margin: 0px 25px;
+  padding: 25px 0px;
+}
+
+#new-bug-button {
+  float: right;
+  margin-bottom: 25px;
+  padding: 5px;
+}
+
+table {
+  width: 100%;
+}
+
+table tr td {
+  padding: 15px;
+}
+
+table tr:nth-child(even) td:nth-child(even) {
+  background-color: #EAEAEA;
+}
+
+table tr:nth-child(odd) td:nth-child(odd) {
+  background-color: #EAEAEA;
+}
+
+#project-summary {
+  width: 30%;
+  padding: 25px 15px 0px 25px;
+  border-left: solid grey;
+}
+
+#project-summary h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+#project-summary p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}

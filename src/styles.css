@@ -79,3 +79,9 @@ table {
   -ms-user-select: none; /* IE10+/Edge */
   user-select: none; /* Standard */
 }
+
+.clearfix::after {
+	display: block;
+	content: "";
+	clear: both;
+}
