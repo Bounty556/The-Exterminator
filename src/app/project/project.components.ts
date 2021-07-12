@@ -5,4 +5,8 @@ import { Component } from "@angular/core";
   templateUrl: './project.component.html',
   styleUrls: ['./project.component.css']
 })
-export class ProjectComponent {}
+export class ProjectComponent {
+  openNewBug() {
+    
+  }
+}
