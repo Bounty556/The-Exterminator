@@ -1,36 +1,46 @@
-<div id="account-details">
-  <h1>Username</h1>
-  <p>Projects: 3</p>
-  <p>Bug Reports Created: 42</p>
-  <p>Bug Reports Closed: 78</p>
-  <p>Account Created: March 3rd, 2021</p>
+<div id="account-content">
+  <div id="account-details">
+    <h1>Username</h1>
+    <p>Projects: 3</p>
+    <p>Bug Reports Created: 42</p>
+    <p>Bug Reports Closed: 78</p>
+    <p>Account Created: March 3rd, 2021</p>
+  </div>
+  
+  <div id="account-options">
+    <form [formGroup]="changeUsernameForm" (ngSubmit)="changeUsername(changeUsernameForm.value)">
+      <h1>Change Username</h1>
+      <input type="text" id="new-username" name="newUsername" formControlName="newUsername" placeholder="New Username" /><br />
+      <input type="password" id="new-username-password" name="newUsernamePassword" formControlName="newUsernamePassword" placeholder="Current Password" /><br />
+      <button id="new-username-button" type="submit">Change Username</button>
+    </form>
+    
+    <hr />
+  
+    <form [formGroup]="changePasswordForm" (ngSubmit)="changePassword(changePasswordForm.value)">
+      <h1>Change Password</h1>
+      <input type="password" id="new-password-current" name="newPasswordCurrent" formControlName="newPasswordCurrent" placeholder="Current Password" /><br />
+      <input type="password" id="new-password" name="newPassword" formControlName="newPassword" placeholder="New Password" /><br />
+      <input type="password" id="new-password-confirm" name="newPasswordConfirm" formControlName="newPasswordConfirm" placeholder="Confirm New Password" /><br />
+      <button id="new-password-button" type="submit">Change Password</button>
+    </form>
+  
+    <hr />
+    
+    <form [formGroup]="changeEmailForm" (ngSubmit)="changeEmail(changeEmailForm.value)">
+      <h1>Change Email Address</h1>
+      <input type="text" id="new-email" name="newEmail" formControlName="newEmail" placeholder="New Email Address" /><br />
+      <input type="password" id="new-email-password" name="newEmailPassword" formControlName="newEmailPassword" placeholder="Current Password" /><br />
+      <button id="new-email-button" type="submit">Change Email Address</button>
+    </form>
+  
+    <hr />
+    
+    <form [formGroup]="dangerZoneForm" (ngSubmit)="deleteAccount(dangerZoneForm.value)">
+      <h1>Danger Zone</h1>
+      <input type="password" id="danger-zone-password" name="dangerZonePassword" formControlName="dangerZonePassword" placeholder="Current Password" /><br />
+      <button id="delete-account-button" type="submit">Delete Account</button>
+      <button id="remove-all-projects-button" type="submit">Remove All Projects</button>
+    </form>
+  </div>
 </div>
-
-<form [formGroup]="changeUsernameForm" (ngSubmit)="changeUsername(changeUsernameForm.value)">
-  <p>Change Username</p>
-  <input type="text" id="new-username" name="newUsername" formControlName="newUsername" placeholder="New Username" />
-  <input type="password" id="new-username-password" name="newUsernamePassword" formControlName="newUsernamePassword" placeholder="Current Password" />
-  <button id="new-username-button" type="submit">Change Username</button>
-</form>
-
-<form [formGroup]="changePasswordForm" (ngSubmit)="changePassword(changePasswordForm.value)">
-  <p>Change Password</p>
-  <input type="password" id="new-password-current" name="newPasswordCurrent" formControlName="newPasswordCurrent" placeholder="Current Password" />
-  <input type="password" id="new-password" name="newPassword" formControlName="newPassword" placeholder="New Password" />
-  <input type="password" id="new-password-confirm" name="newPasswordConfirm" formControlName="newPasswordConfirm" placeholder="Confirm New Password" />
-  <button id="new-password-button" type="submit">Change Password</button>
-</form>
-
-<form [formGroup]="changeEmailForm" (ngSubmit)="changeEmail(changeEmailForm.value)">
-  <p>Change Email Address</p>
-  <input type="text" id="new-email" name="newEmail" formControlName="newEmail" placeholder="New Email Address" />
-  <input type="password" id="new-email-password" name="newEmailPassword" formControlName="newEmailPassword" placeholder="Current Password" />
-  <button id="new-email-button" type="submit">Change Email Address</button>
-</form>
-
-<form [formGroup]="dangerZoneForm" (ngSubmit)="deleteAccount(dangerZoneForm.value)">
-  <p>Danger Zone</p>
-  <input type="password" id="danger-zone-password" name="dangerZonePassword" formControlName="dangerZonePassword" placeholder="Current Password" />
-  <button id="delete-account-button" type="submit">Delete Account</button>
-  <button id="remove-all-projects-button" type="submit">Remove All Projects</button>
-</form>

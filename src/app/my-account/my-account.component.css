@@ -1,0 +1,51 @@
+#account-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+#account-details {
+  height: 100%;
+  width: 275px;
+  margin-top: 25px;
+  padding: 25px;
+}
+
+#account-details h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+#account-details p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#account-options {
+  border-left: solid grey;
+  width: calc(90% - 300px);
+  height: 900px;
+  padding-top: 50px;
+  padding-left: 25px;
+}
+
+#account-options h1 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+#account-options input {
+  padding: 5px;
+  margin: 15px;
+  font-size: 15px;
+  width: 15%;
+  max-width: 300px;
+  min-width: 200px;
+}
+
+#account-options button {
+  padding: 5px;
+  margin: 15px;
+  font-size: 15px;
+}
