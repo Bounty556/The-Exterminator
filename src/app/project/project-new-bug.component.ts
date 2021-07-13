@@ -28,7 +28,7 @@ export class ProjectNewBugComponent implements OnInit {
   }
 
   onSubmit(form) {
-
+    
   }
 
   returnToProject() {

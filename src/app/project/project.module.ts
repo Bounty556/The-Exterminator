@@ -4,6 +4,7 @@ import { ReactiveFormsModule } from "@angular/forms";
 import { projectRouting } from "./project.routing";
 import { ProjectComponent } from "./project.components";
 import { ProjectNewBugComponent } from "./project-new-bug.component";
+import { ProjectBugComponent } from "./project-bug-component";
 
 @NgModule({
   imports: [
@@ -13,7 +14,8 @@ import { ProjectNewBugComponent } from "./project-new-bug.component";
   ],
   declarations: [
     ProjectComponent,
-    ProjectNewBugComponent
+    ProjectNewBugComponent,
+    ProjectBugComponent
   ]
 })
 export class ProjectModule {}
