@@ -19,6 +19,10 @@ export class ProjectComponent implements OnInit {
   }
 
   openNewBug() {
-    this.router.navigate(['project/', this.projectId, 'new-bug'])
+    this.router.navigate(['project', this.projectId, 'new-bug'])
+  }
+
+  viewBug() {
+    this.router.navigate(['project', this.projectId, 'bug', '14532'])
   }
 }
