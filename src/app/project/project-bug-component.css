@@ -1,0 +1,84 @@
+button {
+  padding: 5px;
+}
+
+#bug-content {
+  padding: 50px;
+  width: 80%;
+}
+
+#bug-content > button {
+  margin: 15px 0px;
+}
+
+#bug-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+#bug-header > h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.post {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.post .poster {
+  width: 10%;
+}
+.post .response {
+  width: 90%;
+}
+
+.center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.vl {
+  border-left: 3px solid grey;
+  height: 75px;
+}
+
+#response {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#response p {
+  width: 10%;
+}
+
+#response form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+}
+
+#response textarea {
+  resize: none;
+  height: 250px;
+  margin-bottom: 25px;
+}
+
+#form-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#form-bottom select {
+  width: 225px;
+}

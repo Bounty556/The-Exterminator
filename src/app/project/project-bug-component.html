@@ -1,27 +1,41 @@
-<button>Return to Project</button>
+<div id="bug-content">
+  <button>Return to Project</button>
+  
+  <div id="bug-header">
+    <h1>Bug Description Goes Here</h1>
+    <h1>Status: Investigating</h1>
+  </div>
+  
+  <div id="original-post" class="post">
+    <p class="poster">JHalpert2:</p>
+    <p class="response">Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure.</p>
+  </div>
+  
+  <div class="center">
+    <div class="vl"></div>
+  </div>
 
-<h1>Bug Description Goes Here</h1>
-<h1>Status: Investigating</h1>
+  <div class="post">
+    <p class="poster">Dev1:</p>
+    <p class="response"> Response to the bug process and procedure.  Response to the bug process and procedure.  Response to the bug process and procedure.  Response to the bug process and procedure.  Response to the bug process and procedure.  Response to the bug process and procedure.  Response to the bug process and procedure.  Response to the bug process and procedure.  Response to the bug process and procedure.  Response to the bug process and procedure.  Response to the bug process and procedure.  Response to the bug process and procedure.  Response to the bug process and procedure.  Response to the bug process and procedure.  Response to the bug process and procedure.  Response to the bug process and procedure.  Response to the bug process and procedure. </p>
+  </div>
+  
+  <div class="center">
+    <div class="vl"></div>
+  </div>
 
-<div id="original-post" class="post">
-  <p>JHalpert2:</p>
-  <p>Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure. Bug process and procedure.</p>
-</div>
-
-<div class="post">
-  <p>Dev1:</p>
-  <p> Response to the bug process and procedure.  Response to the bug process and procedure.  Response to the bug process and procedure.  Response to the bug process and procedure.  Response to the bug process and procedure.  Response to the bug process and procedure.  Response to the bug process and procedure.  Response to the bug process and procedure.  Response to the bug process and procedure.  Response to the bug process and procedure.  Response to the bug process and procedure.  Response to the bug process and procedure.  Response to the bug process and procedure.  Response to the bug process and procedure.  Response to the bug process and procedure.  Response to the bug process and procedure.  Response to the bug process and procedure. </p>
-</div>
-
-<div id="response">
-  <p>You:</p>
-  <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
-    <textarea id="response-text" name="responseText" formControlName="responseText" placeholder="Your response goes here"></textarea>
-    <select id="bug-status" name="bugStatus" formControlName="bugStatus">
-      <option value="investigating">Investigating</option>
-      <option value="ready">Ready for Next Push</option>
-      <option value="solved">Solved</option>
-    </select>
-    <button type="submit">Add Comment</button>
-  </form>
+  <div id="response">
+    <p>You:</p>
+    <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+      <textarea id="response-text" name="responseText" formControlName="responseText" placeholder="Your response goes here"></textarea>
+      <div id="form-bottom">
+        <select id="bug-status" name="bugStatus" formControlName="bugStatus">
+          <option value="investigating">Investigating</option>
+          <option value="ready">Ready for Next Push</option>
+          <option value="solved">Solved</option>
+        </select>
+        <button type="submit">Add Comment</button>
+      </div>
+    </form>
+  </div>
 </div>
