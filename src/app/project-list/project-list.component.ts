@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { FormBuilder, FormGroup } from "@angular/forms";
+import { Router } from "@angular/router";
 
 interface ProjectListItem {
   name: string,
@@ -160,7 +161,8 @@ export class ProjectListComponent implements OnInit {
     projectId: 15
   }];
 
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder,
+    private router: Router) { }
 
   ngOnInit() {
     this.form = this.formBuilder.group({
@@ -170,5 +172,9 @@ export class ProjectListComponent implements OnInit {
 
   onSubmit(projectName) {
     this.hideRecentHeader = true;
+  }
+
+  viewProject() {
+    this.router.navigate(['project', '1234']);
   }
 }
